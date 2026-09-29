@@ -32,21 +32,34 @@
 
       <nav aria-label="Primary Navigation">
         <ul id="primary-nav" class="nav-menu">
-          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li class="nav-item-dropdown">
-            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <button class="nav-link dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
               Services <span class="dropdown-chevron" aria-hidden="true">&#9662;</span>
             </button>
             <ul class="dropdown-menu" aria-label="Services Submenu">
               <li><a href="trauma-emdr.html" class="dropdown-link">Trauma &amp; EMDR</a></li>
               <li><a href="grief-loss.html" class="dropdown-link">Grief &amp; Loss</a></li>
-              <li><a href="addiction-recovery.html" class="dropdown-link">Addiction Recovery</a></li>
+              <li><a href="addiction-recovery.html" class="dropdown-link active" aria-current="page">Addiction Recovery</a></li>
+              <li><span class="dropdown-link is-disabled" aria-disabled="true">EMDR Intensives <span class="badge-soon">(coming soon)</span></span></li>
             </ul>
           </li>
+          <li><a href="consultation.html" class="nav-link">Consultation &amp; <br> Supervision</a></li>
           <li><a href="fees.html" class="nav-link">Fees &amp; Insurance</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="#" class="nav-link nav-cta">Schedule a Consultation</a></li>
+          <li class="nav-item-dropdown cta-dropdown">
+            <button class="nav-link nav-cta cta-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>Schedule</span>
+              <span class="dropdown-chevron cta-chevron" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="dropdown-menu cta-dropdown-menu" aria-label="Scheduling Options">
+              <li><a href="#" class="dropdown-link">Schedule a Session</a></li>
+              <li><a href="#" class="dropdown-link">Schedule a Consultation</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -125,21 +138,29 @@
         <div>
           <h2 class="footer-heading">Huddle &amp; Heal</h2>
           <p>Counseling and Consulting, LLC</p>
-          <p class="placeholder-note">[ PLACEHOLDER: Location, Phone, Email &amp; Telehealth Disclosures ]</p>
+          <!-- PLACEHOLDER: Footer Contact & Location Info -->
+          <p class="placeholder-note">[ PLACEHOLDER: Location, Phone, Email <br>&amp; Telehealth Disclosures ]</p>
         </div>
 
-        <!-- Navigation Links Column -->
-        <div>
+        <!-- Navigation Links Column (2 Columns) -->
+        <div class="footer-nav-col">
           <h2 class="footer-heading">Navigation</h2>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About &amp; Credentials</a></li>
-            <li><a href="trauma-emdr.html">Trauma &amp; EMDR</a></li>
-            <li><a href="grief-loss.html">Grief &amp; Bereavement</a></li>
-            <li><a href="addiction-recovery.html">Addiction &amp; Recovery</a></li>
-            <li><a href="fees.html">Fees &amp; Insurance</a></li>
-            <li><a href="contact.html">Contact &amp; Client Portal</a></li>
-          </ul>
+          <div class="footer-nav-grid">
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About &amp; Credentials</a></li>
+              <li><a href="consultation.html">Consultation &amp; Supervision</a></li>
+              <li><a href="trauma-emdr.html">Trauma &amp; EMDR</a></li>
+              <li><a href="grief-loss.html">Grief &amp; Bereavement</a></li>
+            </ul>
+            <ul class="footer-links">
+              <li><a href="addiction-recovery.html">Addiction &amp; Recovery</a></li>
+              <li><a href="fees.html">Fees &amp; Insurance</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
 
         <!-- Client Portal & Crisis Column -->
@@ -148,7 +169,9 @@
           <ul class="footer-links">
             <li><a href="contact.html">Client Portal Login</a></li>
             <li><a href="fees.html">Payment &amp; Good Faith Estimate</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
           </ul>
+          <!-- PLACEHOLDER: Emergency / Crisis Notice -->
           <p class="placeholder-note" style="margin-top: 1rem;">[ PLACEHOLDER: Crisis Hotline &amp; Emergency Disclaimer
             ]</p>
         </div>

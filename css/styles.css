@@ -71,7 +71,7 @@
   --space-3xl: 4.5rem;
 
   /* Layout */
-  --container-max-width: 1140px;
+  --container-max-width: 1260px;
   --header-height: 4.75rem;
   --border-radius-sm: 6px;
   --border-radius-md: 10px;
@@ -257,7 +257,7 @@ ol {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
+  gap: 0.35rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -265,12 +265,14 @@ ol {
 
 .nav-link {
   position: relative;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--color-text-main);
-  padding: 0.55rem 0.95rem;
+  padding: 0.5rem 0.65rem;
   border-radius: var(--border-radius-md);
   border: 1px solid transparent;
+  line-height: 1.2;
+  text-align: center;
   transition:
     color var(--transition-fast),
     background-color var(--transition-fast),
@@ -327,7 +329,7 @@ ol {
   box-shadow: 0 1px 4px rgba(186, 116, 84, 0.4);
 }
 
-/* Nav CTA - Contact & Portal Access Button */
+/* Nav CTA - Portal Access Button */
 .nav-cta {
   background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
   color: var(--color-text-inverse) !important;
@@ -479,6 +481,61 @@ ol {
   color: var(--color-primary-dark);
   background-color: var(--color-bg-alt);
   border-left: 3px solid var(--color-accent);
+}
+
+.dropdown-link.is-disabled {
+  color: var(--color-text-muted);
+  opacity: 0.65;
+  cursor: not-allowed;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  background-color: transparent !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.badge-soon {
+  font-size: 0.72rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   CTA Button Dropdown
+   ========================================================================== */
+.cta-dropdown {
+  position: relative;
+}
+
+.cta-dropdown-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.cta-chevron {
+  font-size: 0.72rem;
+  line-height: 1;
+  color: var(--color-text-inverse) !important;
+  transition: transform var(--transition-fast);
+}
+
+.cta-dropdown:hover .cta-chevron,
+.cta-dropdown-toggle[aria-expanded="true"] .cta-chevron {
+  transform: rotate(180deg);
+}
+
+.cta-dropdown-menu {
+  right: 0;
+  left: auto;
+  min-width: 235px;
 }
 
 /* Mobile Nav Toggle */
@@ -731,12 +788,35 @@ ol {
   position: relative;
 }
 
+@media (min-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1.35fr 1fr;
+  }
+}
+
+.footer-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-xs) var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .footer-nav-grid {
+    column-gap: var(--space-lg);
+  }
+}
+
 .footer-heading {
   color: var(--color-text-inverse);
   font-size: 1.05rem;
   margin-bottom: var(--space-sm);
   font-family: var(--font-family-serif);
   letter-spacing: -0.01em;
+}
+
+.footer-nav-col .footer-heading {
+  text-align: center;
+  margin-right: 90px;
 }
 
 .footer-links {
@@ -751,6 +831,7 @@ ol {
 
 .footer-links a {
   display: inline-block;
+  line-height: 1.35;
   color: #cbd8e2;
   text-decoration: none;
   padding: 2px 0;
@@ -803,7 +884,7 @@ ol {
 /* ==========================================================================
    Responsive Navigation
    ========================================================================== */
-@media (max-width: 860px) {
+@media (max-width: 1060px) {
   .nav-toggle {
     display: inline-flex;
     align-items: center;
@@ -887,5 +968,34 @@ ol {
     text-align: center;
     margin-top: var(--space-xs);
     padding: 0.75rem 1rem;
+  }
+
+  .nav-menu .cta-dropdown {
+    width: 100%;
+  }
+
+  .nav-menu .cta-dropdown-toggle {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: var(--space-xs);
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-menu .cta-dropdown-menu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    border: 1px solid var(--color-border);
+    background-color: rgba(245, 239, 230, 0.6);
+    border-radius: var(--border-radius-sm);
+    margin: var(--space-xxs) 0 var(--space-xs) var(--space-md);
+    padding: var(--space-xs);
+    animation: none;
+    width: auto;
+  }
+
+  .nav-menu .cta-dropdown-menu.is-open {
+    display: flex;
   }
 }

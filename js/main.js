@@ -47,35 +47,62 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Services Dropdown Menu Accessibility & Interaction ---
-  const dropdownToggle = document.querySelector('.dropdown-toggle');
-  const dropdownMenu = document.querySelector('.dropdown-menu');
+  // --- Dropdown Menus (Services & CTA Dropdowns) ---
+  const dropdownContainers = document.querySelectorAll('.nav-item-dropdown');
 
-  if (dropdownToggle && dropdownMenu) {
-    dropdownToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isOpen = dropdownMenu.classList.contains('is-open');
-      dropdownMenu.classList.toggle('is-open');
-      dropdownToggle.setAttribute('aria-expanded', String(!isOpen));
-    });
+  dropdownContainers.forEach((container) => {
+    const toggle = container.querySelector('.dropdown-toggle, .cta-dropdown-toggle');
+    const menu = container.querySelector('.dropdown-menu');
 
-    // Close dropdown on click outside
-    document.addEventListener('click', (e) => {
-      if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-        dropdownMenu.classList.remove('is-open');
-        dropdownToggle.setAttribute('aria-expanded', 'false');
+    if (toggle && menu) {
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = menu.classList.contains('is-open');
+
+        // Close any other open dropdowns first
+        dropdownContainers.forEach((otherContainer) => {
+          if (otherContainer !== container) {
+            const otherMenu = otherContainer.querySelector('.dropdown-menu');
+            const otherToggle = otherContainer.querySelector('.dropdown-toggle, .cta-dropdown-toggle');
+            if (otherMenu) otherMenu.classList.remove('is-open');
+            if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        menu.classList.toggle('is-open', !isOpen);
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+    }
+  });
+
+  // Close all open dropdowns on click outside
+  document.addEventListener('click', (e) => {
+    dropdownContainers.forEach((container) => {
+      const menu = container.querySelector('.dropdown-menu');
+      const toggle = container.querySelector('.dropdown-toggle, .cta-dropdown-toggle');
+      if (menu && !container.contains(e.target)) {
+        menu.classList.remove('is-open');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
       }
     });
+  });
 
-    // Close dropdown on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && dropdownMenu.classList.contains('is-open')) {
-        dropdownMenu.classList.remove('is-open');
-        dropdownToggle.setAttribute('aria-expanded', 'false');
-        dropdownToggle.focus();
-      }
-    });
-  }
+  // Close all open dropdowns on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdownContainers.forEach((container) => {
+        const menu = container.querySelector('.dropdown-menu');
+        const toggle = container.querySelector('.dropdown-toggle, .cta-dropdown-toggle');
+        if (menu && menu.classList.contains('is-open')) {
+          menu.classList.remove('is-open');
+          if (toggle) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.focus();
+          }
+        }
+      });
+    }
+  });
 
   // --- Dynamic Copyright Year ---
   const yearSpan = document.getElementById('current-year');
