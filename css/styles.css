@@ -1024,6 +1024,133 @@ ol {
 }
 
 /* ==========================================================================
+   Clinical Consultation & Supervision (About Page Section 4)
+   ========================================================================== */
+.consulting-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.consulting-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .consulting-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.consulting-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+}
+
+.consulting-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.consulting-intro {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-xl);
+  max-width: 860px;
+}
+
+.consulting-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 860px) {
+  .consulting-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.consulting-service-card {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+}
+
+.consulting-service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-secondary-light);
+}
+
+.consulting-service-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.consulting-service-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-hover);
+  margin-top: 2px;
+}
+
+.consulting-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  background-color: rgba(60, 88, 112, 0.1);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: 0.35rem;
+}
+
+.consulting-service-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.consulting-service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.consulting-action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* ==========================================================================
    Placeholder Box Styles - Modern Card Surface with Subtle Highlighting & Shadows
    ========================================================================== */
 .placeholder-box {
