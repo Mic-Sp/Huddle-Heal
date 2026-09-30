@@ -1273,12 +1273,16 @@ ol {
    Closing CTA Cards (About & Specialty Pages)
    ========================================================================== */
 .about-cta-section,
-.trauma-cta-section {
+.trauma-cta-section,
+.grief-cta-section,
+.addiction-cta-section {
   margin-bottom: var(--space-2xl);
 }
 
 .about-cta-card,
-.trauma-cta-card {
+.trauma-cta-card,
+.grief-cta-card,
+.addiction-cta-card {
   position: relative;
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
@@ -1291,13 +1295,17 @@ ol {
 
 @media (min-width: 768px) {
   .about-cta-card,
-  .trauma-cta-card {
+  .trauma-cta-card,
+  .grief-cta-card,
+  .addiction-cta-card {
     padding: var(--space-2xl) var(--space-2xl);
   }
 }
 
 .about-cta-card::before,
-.trauma-cta-card::before {
+.trauma-cta-card::before,
+.grief-cta-card::before,
+.addiction-cta-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1308,7 +1316,9 @@ ol {
 }
 
 .about-cta-heading,
-.trauma-cta-heading {
+.trauma-cta-heading,
+.grief-cta-heading,
+.addiction-cta-heading {
   font-family: var(--font-family-serif);
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   font-weight: 700;
@@ -1318,7 +1328,9 @@ ol {
 }
 
 .about-cta-text,
-.trauma-cta-text {
+.trauma-cta-text,
+.grief-cta-text,
+.addiction-cta-text {
   font-size: 1.05rem;
   line-height: 1.68;
   color: var(--color-text-muted);
@@ -1329,7 +1341,9 @@ ol {
 }
 
 .about-cta-buttons,
-.trauma-cta-buttons {
+.trauma-cta-buttons,
+.grief-cta-buttons,
+.addiction-cta-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1340,7 +1354,9 @@ ol {
 
 @media (min-width: 600px) {
   .about-cta-buttons,
-  .trauma-cta-buttons {
+  .trauma-cta-buttons,
+  .grief-cta-buttons,
+  .addiction-cta-buttons {
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--space-md);
@@ -1348,7 +1364,9 @@ ol {
 }
 
 .about-cta-disclaimer,
-.trauma-cta-disclaimer {
+.trauma-cta-disclaimer,
+.grief-cta-disclaimer,
+.addiction-cta-disclaimer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1364,7 +1382,9 @@ ol {
 }
 
 .about-cta-disclaimer .disclaimer-icon,
-.trauma-cta-disclaimer .disclaimer-icon {
+.trauma-cta-disclaimer .disclaimer-icon,
+.grief-cta-disclaimer .disclaimer-icon,
+.addiction-cta-disclaimer .disclaimer-icon {
   flex-shrink: 0;
   color: var(--color-accent-hover);
 }
@@ -2284,6 +2304,733 @@ ol {
   line-height: 1.62;
   color: var(--color-text-main);
   margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Grief & Bereavement Page Styles (Sections 1 & 2)
+   ========================================================================== */
+.grief-hero-section {
+  margin-bottom: var(--space-xl);
+}
+
+.grief-hero-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-2xl) var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .grief-hero-card {
+    padding: var(--space-2xl) var(--space-2xl);
+  }
+}
+
+.grief-hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 50%, var(--color-accent) 100%);
+}
+
+.grief-title {
+  font-family: var(--font-family-serif);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.02em;
+}
+
+.grief-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  line-height: 1.45;
+}
+
+.grief-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  max-width: 920px;
+  margin-bottom: 0;
+}
+
+/* Types of Grief & Loss Card */
+.grief-types-section {
+  margin-bottom: var(--space-xl);
+}
+
+.grief-types-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .grief-types-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.grief-types-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
+}
+
+.grief-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.grief-lead-text {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--color-text-muted);
+  max-width: 920px;
+  margin-bottom: var(--space-lg);
+}
+
+.grief-types-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.grief-type-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: transform var(--transition-base), border-color var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.grief-type-item:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary-light);
+  box-shadow: var(--shadow-xs);
+}
+
+.grief-type-bullet {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  margin-top: 0.55rem;
+}
+
+.grief-type-content {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.grief-type-content strong {
+  font-family: var(--font-family-serif);
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Grief & Bereavement Page Styles (Sections 3 & 4)
+   ========================================================================== */
+.grief-approach-section {
+  margin-bottom: var(--space-xl);
+}
+
+.grief-approach-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .grief-approach-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.grief-approach-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+}
+
+.grief-modalities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 860px) {
+  .grief-modalities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grief-modality-item {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+}
+
+.grief-modality-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-secondary-light);
+}
+
+.grief-modality-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid rgba(60, 88, 112, 0.12);
+}
+
+.grief-modality-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-hover);
+}
+
+.grief-modality-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0;
+}
+
+.grief-modality-desc {
+  font-size: 0.95rem;
+  line-height: 1.62;
+  color: var(--color-text-main);
+  margin-bottom: 0;
+}
+
+/* Section 4: Finding a Way Forward Card */
+.grief-forward-section {
+  margin-bottom: var(--space-xl);
+}
+
+.grief-forward-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .grief-forward-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.grief-forward-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-accent) 50%, var(--color-primary) 100%);
+}
+
+.grief-themes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.grief-theme-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: transform var(--transition-base), border-color var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.grief-theme-item:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary-light);
+  box-shadow: var(--shadow-xs);
+}
+
+.grief-theme-bullet {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  margin-top: 0.55rem;
+}
+
+.grief-theme-content {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.grief-theme-content strong {
+  font-family: var(--font-family-serif);
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Addiction & Substance Use Recovery Page Styles (Sections 1 & 2)
+   ========================================================================== */
+.addiction-hero-section {
+  margin-bottom: var(--space-xl);
+}
+
+.addiction-hero-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-2xl) var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .addiction-hero-card {
+    padding: var(--space-2xl) var(--space-2xl);
+  }
+}
+
+.addiction-hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+}
+
+.addiction-title {
+  font-family: var(--font-family-serif);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.02em;
+}
+
+.addiction-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  line-height: 1.45;
+}
+
+.addiction-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  max-width: 920px;
+  margin-bottom: 0;
+}
+
+/* Understanding Addiction & Cycle Card */
+.addiction-cycle-section {
+  margin-bottom: var(--space-xl);
+}
+
+.addiction-cycle-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .addiction-cycle-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.addiction-cycle-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-accent) 50%, var(--color-primary) 100%);
+}
+
+.addiction-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.addiction-lead-text {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--color-text-muted);
+  max-width: 920px;
+  margin-bottom: var(--space-lg);
+}
+
+.addiction-themes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.addiction-theme-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: transform var(--transition-base), border-color var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.addiction-theme-item:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary-light);
+  box-shadow: var(--shadow-xs);
+}
+
+.addiction-theme-bullet {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  margin-top: 0.55rem;
+}
+
+.addiction-theme-content {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.addiction-theme-content strong {
+  font-family: var(--font-family-serif);
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Addiction & Substance Use Recovery Page Styles (Sections 3 & 4)
+   ========================================================================== */
+.addiction-dual-section {
+  margin-bottom: var(--space-xl);
+}
+
+.addiction-dual-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .addiction-dual-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.addiction-dual-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+}
+
+.addiction-focus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.addiction-focus-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: transform var(--transition-base), border-color var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.addiction-focus-item:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary-light);
+  box-shadow: var(--shadow-xs);
+}
+
+.addiction-focus-bullet {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  margin-top: 0.55rem;
+}
+
+.addiction-focus-content {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.addiction-focus-content strong {
+  font-family: var(--font-family-serif);
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* Section 4: Pathways to Sustainable Recovery Card */
+.addiction-modalities-section {
+  margin-bottom: var(--space-xl);
+}
+
+.addiction-modalities-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .addiction-modalities-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.addiction-modalities-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 50%, var(--color-accent) 100%);
+}
+
+.addiction-modalities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 860px) {
+  .addiction-modalities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.addiction-modality-item {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+}
+
+.addiction-modality-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-secondary-light);
+}
+
+.addiction-modality-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid rgba(60, 88, 112, 0.12);
+}
+
+.addiction-modality-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-hover);
+}
+
+.addiction-modality-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0;
+}
+
+.addiction-modality-desc {
+  font-size: 0.95rem;
+  line-height: 1.62;
+  color: var(--color-text-main);
+  margin-bottom: 0;
+}
+
+/* Section 5: Support for Families & Loved Ones Card */
+.addiction-family-section {
+  margin-bottom: var(--space-xl);
+}
+
+.addiction-family-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .addiction-family-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.addiction-family-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
+}
+
+.addiction-family-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.addiction-family-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: transform var(--transition-base), border-color var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.addiction-family-item:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary-light);
+  box-shadow: var(--shadow-xs);
+}
+
+.addiction-family-bullet {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  margin-top: 0.55rem;
+}
+
+.addiction-family-content {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.addiction-family-content strong {
+  font-family: var(--font-family-serif);
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  font-weight: 700;
 }
 
 /* ==========================================================================
