@@ -24,7 +24,7 @@
 
   /* Warm Cream & Soft Parchment (Drawn from the logo background & inner emblem) */
   --color-bg-page: #EEF3F7;
-  --color-bg-surface: #ffffff;
+  --color-bg-surface: #fdf6f6;
   --color-bg-alt: #f5efe6;
 
   /* Typography Neutrals (Warm charcoal drawn from logo text) */
@@ -266,7 +266,7 @@ ol {
   margin-top: 2px;
 }
 
-.header-inner > nav {
+.header-inner>nav {
   display: flex;
   flex: 1;
   align-items: center;
@@ -283,7 +283,7 @@ ol {
   padding: 0;
 }
 
-.nav-menu > li:first-child {
+.nav-menu>li:first-child {
   margin-left: auto;
 }
 
@@ -1576,7 +1576,7 @@ ol {
     padding: 0.75rem 1rem;
   }
 
-  .nav-menu > li:first-child {
+  .nav-menu>li:first-child {
     margin-left: 0;
   }
 
