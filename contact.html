@@ -73,44 +73,140 @@
     <div class="container">
 
       <!-- =================================================================
-           PLACEHOLDER: Page Header
-           Insert contact introduction and guidance for prospective vs. existing clients.
+           Section 1: Contact Header & Welcome Card
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Page Header Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Page Title &amp; Intro - Contact &amp; Client Portal ]</p>
-        <p class="placeholder-note">Insert page heading, warm invitation to connect, and quick guidance for new vs.
-          existing clients.</p>
+      <section class="contact-header-section" aria-labelledby="contact-heading">
+        <div class="contact-header-card">
+          <span class="contact-tag">GET IN TOUCH &bull; HUDDLE &amp; HEAL</span>
+          <h1 id="contact-heading" class="contact-title">Connect with Emily</h1>
+          <p class="contact-lead">
+            Whether you are taking the first brave step toward therapy, seeking professional clinical supervision, or
+            returning as an established client, you are welcome here. Choose an option below to book directly online or
+            reach out with any questions.
+          </p>
+        </div>
       </section>
 
       <!-- =================================================================
-           PLACEHOLDER: Existing Client Portal Access
-           Insert direct portal login button (e.g. SimplePractice / EHR integration)
+           Section 2: Two-Column Action Cards (New Clients vs. Client Portal)
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Client Portal Access Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Existing Client Portal Access ]</p>
-        <p class="placeholder-note">Insert secure EHR portal login link/button, appointment rescheduling instructions,
-          and telehealth access notes.</p>
+      <section class="contact-actions-section" aria-label="Appointment and Portal Access Options">
+        <div class="contact-actions-grid">
+          <!-- Card A: Prospective Clients & Consultations -->
+          <article class="contact-action-card action-card-prospective">
+            <div class="contact-action-body">
+              <span class="contact-badge badge-prospective">NEW CLIENTS &amp; INQUIRIES</span>
+              <h2 class="contact-action-heading">Schedule a Free Consultation</h2>
+              <p class="contact-action-desc">
+                The best way to get started is with a complimentary 15-minute phone or video consultation. We’ll discuss
+                what you're experiencing, answer your questions, and ensure we are a good clinical fit.
+              </p>
+            </div>
+            <div class="contact-action-footer">
+              <a href="https://huddleandhealcounselingandconsulting.sessionshealth.com/" class="btn btn-accent"
+                target="_blank" rel="noopener noreferrer">Book 15-Minute Consultation &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card B: Established Clients -->
+          <article class="contact-action-card action-card-portal">
+            <div class="contact-action-body">
+              <span class="contact-badge badge-portal">CLIENT PORTAL</span>
+              <h2 class="contact-action-heading">Existing Client Access</h2>
+              <p class="contact-action-desc">
+                Currently working with Emily? Access your secure, HIPAA-compliant Sessions Health portal to join
+                scheduled telehealth sessions, manage paperwork, review billing statements, or send a message.
+              </p>
+            </div>
+            <div class="contact-action-footer">
+              <a href="https://huddleandhealcounselingandconsulting.sessionshealth.com/" class="btn btn-outline"
+                target="_blank" rel="noopener noreferrer">Log In to Client Portal &rarr;</a>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- =================================================================
-           PLACEHOLDER: Practice Contact Details & Office Hours
-           Insert phone number, secure email address, practice hours, and response time expectations.
+           Section 3: Direct Contact Details & Practice Information Card
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Contact Details Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Contact Details, Hours &amp; Response Times ]</p>
-        <p class="placeholder-note">Insert practice phone number, confidential email address, operating hours, and
-          standard response time window (e.g., 24-48 business hours).</p>
-      </section>
+      <section class="contact-inquiries-section" aria-labelledby="inquiries-heading">
+        <div class="contact-inquiries-card">
+          <header class="contact-inquiries-header">
+            <h2 id="inquiries-heading" class="contact-inquiries-title">Direct Practice Inquiries</h2>
+            <p class="contact-inquiries-subtitle">Have a specific question regarding EMDR, consultation, or fees before
+              scheduling? Reach out directly.</p>
+          </header>
 
-      <!-- =================================================================
-           PLACEHOLDER: Crisis & Emergency Hotline Information
-           Insert mandatory notice that the contact form is not monitored 24/7 for crises.
-           ================================================================= -->
-      <section class="placeholder-box" aria-label="Crisis Notice Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Crisis Hotline &amp; Immediate Emergency Notice ]</p>
-        <p class="placeholder-note">Insert standard emergency disclaimer: "If you are experiencing a mental health
-          emergency, please call 911, dial 988 (Suicide &amp; Crisis Lifeline), or go to your nearest emergency room.
-          This contact form is not monitored 24/7."</p>
+          <div class="contact-details-grid">
+            <!-- Confidential Phone -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-detail-content">
+                <p class="contact-label"><strong>Phone / Voicemail:</strong></p>
+                <p><a href="tel:19314447689" class="contact-link">(931) 444-7689</a></p>
+                <p class="contact-note">Note: Voicemails are confidential and returned within 1&ndash;2 business days.
+                </p>
+              </div>
+            </div>
+
+            <!-- Confidential Email -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-detail-content">
+                <p class="contact-label"><strong>Direct Email:</strong></p>
+                <p><a href="mailto:emily@huddleandhealcounselingandconsulting.com"
+                    class="contact-link">Emily@HuddleandHeal<wbr>CounselingandConsulting.com</a></p>
+              </div>
+            </div>
+
+            <!-- Licensure & Service Area -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-detail-content">
+                <p class="contact-label"><strong>Teletherapy Scope:</strong></p>
+                <p>Providing 100% remote teletherapy for adults physically located in <strong>Tennessee</strong>,
+                  <strong>Indiana</strong>, and <strong>Illinois</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Scheduling & Office Hours -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="contact-detail-content">
+                <p class="contact-label"><strong>Appointment Hours:</strong></p>
+                <p>Session and consultation hours by appointment will be posted soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
     </div>
