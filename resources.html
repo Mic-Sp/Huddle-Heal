@@ -71,47 +71,443 @@
     <div class="container">
 
       <!-- =================================================================
-           PLACEHOLDER: Page Header
-           Insert resources intro, encouragement for self-directed learning and support.
+           Section 1: Page Header & Intro
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Page Header Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Page Title &amp; Intro - Client Resources &amp; Support Tools ]</p>
-        <p class="placeholder-note">Insert page heading, validation of proactive healing, and guidance on navigating available resources.</p>
+      <section class="resources-hero-section" aria-labelledby="resources-hero-title">
+        <div class="resources-hero-card">
+          <h1 id="resources-hero-title" class="resources-title">Client Resources &amp; Educational Tools</h1>
+          <p class="resources-subtitle">Curated guides, grounding techniques, and clinical insights to support your
+            personal journey.</p>
+          <p class="resources-lead">
+            Healing often involves learning to understand our nervous systems, de-stigmatizing our struggles, and
+            discovering that what we feel makes sense in the context of what we have lived through. These curated
+            materials are here to demystify therapy modalities like EMDR, provide compassionate perspectives on grief
+            and recovery, and offer practical tools between sessions.
+          </p>
+        </div>
       </section>
 
       <!-- =================================================================
-           PLACEHOLDER: Immediate Crisis & Helpline Information
-           Insert 988, Crisis Text Line, Trevor Project, SAMHSA, Veterans Crisis Line.
+           Section 2: 24/7 Crisis & Immediate Support
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Crisis Helplines Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: 24/7 Crisis Helplines &amp; Immediate Support ]</p>
-        <p class="placeholder-note">Insert contact cards for: 988 Suicide &amp; Crisis Lifeline, Crisis Text Line (Text HOME to 741741), The Trevor Project, Veterans Crisis Line, and SAMHSA National Helpline.</p>
+      <section class="crisis-support-section" aria-labelledby="crisis-support-title">
+        <div class="crisis-support-card">
+          <div class="crisis-support-header">
+            <span class="crisis-support-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </span>
+            <h2 id="crisis-support-title" class="crisis-support-title">24/7 Crisis &amp; Immediate Support</h2>
+          </div>
+          <div class="crisis-grid">
+            <div class="crisis-item">
+              <div>
+                <h3 class="crisis-item-name">988 Suicide &amp; Crisis Lifeline</h3>
+                <p class="crisis-item-desc">Free, confidential 24/7 mental health crisis response by phone or text
+                  across the US.</p>
+              </div>
+              <a href="tel:988" class="crisis-action-btn" aria-label="Call or text 988 Suicide and Crisis Lifeline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Call or Text 988
+              </a>
+            </div>
+
+            <div class="crisis-item">
+              <div>
+                <h3 class="crisis-item-name">Crisis Text Line</h3>
+                <p class="crisis-item-desc">Connect with a trained crisis counselor 24/7 over free, confidential SMS
+                  support.</p>
+              </div>
+              <a href="sms:741741?&body=HOME" class="crisis-action-btn"
+                aria-label="Text HOME to 741741 Crisis Text Line">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+                Text HOME to 741741
+              </a>
+            </div>
+
+            <div class="crisis-item">
+              <div>
+                <h3 class="crisis-item-name">SAMHSA National Helpline</h3>
+                <p class="crisis-item-desc">24/7 treatment referral and support for substance use and mental health
+                  challenges.</p>
+              </div>
+              <a href="tel:18006624357" class="crisis-action-btn"
+                aria-label="Call SAMHSA National Helpline at 1-800-662-4357">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                1-800-662-4357
+              </a>
+            </div>
+
+            <div class="crisis-item">
+              <div>
+                <h3 class="crisis-item-name">Veterans Crisis Line</h3>
+                <p class="crisis-item-desc">Confidential 24/7 crisis support for veterans, service members, and their
+                  loved ones.</p>
+              </div>
+              <a href="tel:988" class="crisis-action-btn"
+                aria-label="Dial 988 then press 1 or text 838255 for Veterans Crisis Line">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                Dial 988, Press 1
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- =================================================================
-           PLACEHOLDER: Recommended Books & Literature
-           Insert reading lists for trauma healing, grief companionship, and recovery.
+           Section 3: Curated Clinical Hub (Emily's Recommended Materials)
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Recommended Reading Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Recommended Books &amp; Literature ]</p>
-        <p class="placeholder-note">Insert curated bibliotherapy list categorized by specialty: trauma and somatic experiencing, navigating grief, and sustainable recovery.</p>
+      <section class="clinical-hub-section" aria-labelledby="clinical-hub-title">
+        <div class="clinical-hub-card">
+          <h2 id="clinical-hub-title" class="clinical-hub-heading">Curated Clinical Hub</h2>
+          <p class="clinical-hub-intro">
+            A thoughtful collection of clinical literature, video presentations, and client-centered guides recommended
+            by Emily to help you explore therapy concepts at your own pace.
+          </p>
+
+          <!-- Pillar 1: Trauma & EMDR Therapy -->
+          <div class="pillar-block">
+            <div class="pillar-header">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </span>
+              <h3 class="pillar-title">Trauma &amp; EMDR Therapy</h3>
+            </div>
+            <div class="resource-cards-grid">
+              <article class="resource-item-card">
+                <div class="resource-item-top">
+                  <span class="resource-badge badge-video">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    Video
+                  </span>
+                  <h4 class="resource-item-title">The Founding of EMDR &mdash; Dr. Francine Shapiro</h4>
+                  <p class="resource-item-desc">An archival clinical interview exploring how psychologist Dr. Francine
+                    Shapiro discovered bilateral eye movements and developed the biological foundation of EMDR therapy
+                    for trauma.</p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=IigQZKLXIck" target="_blank" rel="noopener noreferrer"
+                  class="resource-link">
+                  <span>Watch Video</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </article>
+
+              <article class="resource-item-card">
+                <div class="resource-item-top">
+                  <span class="resource-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="16" y1="13" x2="8" y2="13" />
+                      <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    Article
+                  </span>
+                  <h4 class="resource-item-title">EMDR Therapy &mdash; Everything You Need to Know</h4>
+                  <p class="resource-item-desc">A clear, client-centered overview breaking down how Eye Movement
+                    Desensitization and Reprocessing works, what to expect in sessions, and how it differs from
+                    traditional talk therapy.</p>
+                </div>
+                <a href="https://www.claritychi.com/blog/emdr-therapy-everything-you-need-to-know" target="_blank"
+                  rel="noopener noreferrer" class="resource-link">
+                  <span>Read Article</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </article>
+
+              <article class="resource-item-card">
+                <div class="resource-item-top">
+                  <span class="resource-badge badge-video">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    Video Demonstration
+                  </span>
+                  <h4 class="resource-item-title">EMDR Therapy Phases 1 through 8 &mdash; Dr. Jamie Marich</h4>
+                  <p class="resource-item-desc">Renowned trauma author and master clinician Dr. Jamie Marich
+                    demonstrates an unscripted EMDR session through all eight clinical phases, from history-taking and
+                    resourcing to reprocessing and closure.</p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=L6UvKhLYf7w" target="_blank" rel="noopener noreferrer"
+                  class="resource-link">
+                  <span>Watch Demonstration</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Grief, Bereavement & Seasonal Care -->
+          <div class="pillar-block">
+            <div class="pillar-header">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </span>
+              <h3 class="pillar-title">Grief, Bereavement &amp; Seasonal Care</h3>
+            </div>
+            <div class="resource-cards-grid">
+              <article class="resource-item-card">
+                <div class="resource-item-top">
+                  <span class="resource-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="16" y1="13" x2="8" y2="13" />
+                      <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    Article
+                  </span>
+                  <h4 class="resource-item-title">Grief and Loss &mdash; Understanding the Impact on Mental Health</h4>
+                  <p class="resource-item-desc">A compassionate exploration of how bereavement affects the mind and
+                    body, dispelling common myths about the &ldquo;stages&rdquo; of grief and validating nonlinear
+                    healing.</p>
+                </div>
+                <a href="https://www.claritychi.com/blog/grief-and-loss-understanding-the-impact-on-mental-health"
+                  target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <span>Read Article</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </article>
+
+              <article class="resource-item-card">
+                <div class="resource-item-top">
+                  <span class="resource-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="16" y1="13" x2="8" y2="13" />
+                      <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    Article
+                  </span>
+                  <h4 class="resource-item-title">Navigating Loneliness During the Holiday Season</h4>
+                  <p class="resource-item-desc">Practical strategies for setting emotional boundaries, honoring lost
+                    loved ones, and managing the ache of loneliness when holiday expectations feel overwhelming.</p>
+                </div>
+                <a href="https://www.claritychi.com/blog/dealing-with-loneliness-during-the-holiday-season"
+                  target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <span>Read Article</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Substance Use & Recovery -->
+          <div class="pillar-block">
+            <div class="pillar-header">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.07-7.75l-.9 3.99a.5.5 0 0 1-.98 0l-.9-3.99A2 2 0 0 1 12 6.5a2 2 0 0 1 2.07 2.25z" />
+                </svg>
+              </span>
+              <h3 class="pillar-title">Substance Use &amp; Recovery</h3>
+            </div>
+            <div class="resource-cards-grid">
+              <article class="resource-item-card">
+                <div class="resource-item-top">
+                  <span class="resource-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="16" y1="13" x2="8" y2="13" />
+                      <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    Article
+                  </span>
+                  <h4 class="resource-item-title">Recognizing the Signs of Alcohol Abuse and Dependence</h4>
+                  <p class="resource-item-desc">An objective, nonjudgmental guide on identifying tolerance, functional
+                    dependence, and emotional drinking patterns, along with supportive pathways to recovery.</p>
+                </div>
+                <a href="https://www.claritychi.com/blog/recognizing-the-signs-of-alcohol-abuse-and-dependence"
+                  target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <span>Read Article</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- =================================================================
-           PLACEHOLDER: Grounding Tools & Self-Regulation Exercises
-           Insert downloadable worksheets, breathing audio guides, and EMDR resourcing notes.
+           Section 4: Somatic Grounding Tools
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Grounding Tools Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Grounding &amp; Nervous System Regulation Tools ]</p>
-        <p class="placeholder-note">Insert step-by-step grounding practices: 5-4-3-2-1 sensory orientation, container exercises, calm-place imagery, and box breathing instructions.</p>
+      <section class="grounding-section" aria-labelledby="grounding-title">
+        <div class="grounding-card">
+          <h2 id="grounding-title" class="grounding-heading">Somatic Grounding Tools</h2>
+          <p class="grounding-intro">
+            Two quick, self-paced nervous system regulation exercises designed to help you interrupt acute distress,
+            re-center your senses, and signal safety to an activated sympathetic nervous system.
+          </p>
+
+          <div class="grounding-grid">
+            <!-- Tool 1: 5-4-3-2-1 Sensory Method -->
+            <div class="grounding-tool-card">
+              <div class="grounding-tool-header">
+                <span class="grounding-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                    <path d="M2 12h20" />
+                  </svg>
+                </span>
+                <h3 class="grounding-tool-title">The 5-4-3-2-1 Sensory Grounding Technique</h3>
+              </div>
+              <p class="grounding-tool-desc">
+                Orient to your current physical environment and pull focus away from internal distress by engaging each
+                of your primary senses step-by-step:
+              </p>
+              <ul class="grounding-steps">
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">5</span>
+                  <span class="grounding-step-text"><strong>See:</strong> Acknowledge 5 distinct objects you can see
+                    around you right now.</span>
+                </li>
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">4</span>
+                  <span class="grounding-step-text"><strong>Feel:</strong> Notice 4 things you can physically feel
+                    (e.g., your feet on the floor, texture of clothing).</span>
+                </li>
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">3</span>
+                  <span class="grounding-step-text"><strong>Hear:</strong> Listen for 3 distinct sounds in your space
+                    (e.g., a clock ticking, distant traffic, your breath).</span>
+                </li>
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">2</span>
+                  <span class="grounding-step-text"><strong>Smell:</strong> Identify 2 scents around you, or recall two
+                    comforting, familiar aromas.</span>
+                </li>
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">1</span>
+                  <span class="grounding-step-text"><strong>Affirm:</strong> Say 1 positive or anchoring affirmation to
+                    yourself (e.g., &ldquo;I am safe in this moment&rdquo;).</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tool 2: Box Breathing (4x4) -->
+            <div class="grounding-tool-card">
+              <div class="grounding-tool-header">
+                <span class="grounding-tool-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <line x1="9" y1="3" x2="9" y2="21" />
+                  </svg>
+                </span>
+                <h3 class="grounding-tool-title">Box Breathing (4&times;4)</h3>
+              </div>
+              <p class="grounding-tool-desc">
+                A structured, rhythmic breathing pattern that stimulates the vagus nerve, slows your heart rate, and
+                signals safety to an activated nervous system:
+              </p>
+              <ul class="grounding-steps">
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">1</span>
+                  <span class="grounding-step-text"><strong>Inhale (4 Seconds):</strong> Breathe in slowly and deeply
+                    through your nose, expanding your lower abdomen.</span>
+                </li>
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">2</span>
+                  <span class="grounding-step-text"><strong>Hold (4 Seconds):</strong> Gently hold the breath at the top
+                    without straining or clenching your throat.</span>
+                </li>
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">3</span>
+                  <span class="grounding-step-text"><strong>Exhale (4 Seconds):</strong> Release the air smoothly and
+                    evenly through your mouth like a gentle sigh.</span>
+                </li>
+                <li class="grounding-step-item">
+                  <span class="grounding-step-num" aria-hidden="true">4</span>
+                  <span class="grounding-step-text"><strong>Pause (4 Seconds):</strong> Rest at the bottom of the breath
+                    for a count of four before beginning the next cycle.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- =================================================================
-           PLACEHOLDER: Call to Action / Consultation Booking
+           Section 5: Closing Invitation
            ================================================================= -->
-      <section class="placeholder-box" aria-label="Call to Action Placeholder">
-        <p class="placeholder-title">[ PLACEHOLDER: Individual Therapy &amp; Consultation Invitation ]</p>
-        <p class="placeholder-note">Insert prompt that resources supplement but do not replace therapy, with link to Contact page.</p>
+      <section class="resources-cta-section" aria-labelledby="resources-cta-title">
+        <div class="resources-cta-card">
+          <h2 id="resources-cta-title" class="resources-cta-heading">Moving From Education to Healing</h2>
+          <p class="resources-cta-text">
+            Learning about trauma, grief, and recovery is often the first step toward reclaiming your life. When you
+            feel ready to explore these concepts in a personalized, collaborative teletherapy space, reach out to
+            schedule a consultation.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Schedule a Free 15-Minute Consultation</a>
+        </div>
       </section>
 
     </div>
@@ -183,11 +579,16 @@
 
       <!-- Dedicated Full-Width Crisis & Emergency Notice -->
       <div class="footer-crisis">
-        <p><strong>Emergency &amp; Crisis Notice:</strong> Huddle and Heal Counseling and Consulting, LLC provides scheduled outpatient psychotherapy and does not provide 24/7 emergency psychiatric services. If you are experiencing a mental health crisis, thoughts of self-harm, or immediate physical danger, please do not wait for an email reply. Immediately call or text 988 to reach the Suicide &amp; Crisis Lifeline (24/7, free, confidential), call 911, or go to your nearest emergency room.</p>
+        <p><strong>Emergency &amp; Crisis Notice:</strong> Huddle and Heal Counseling and Consulting, LLC provides
+          scheduled outpatient psychotherapy and does not provide 24/7 emergency psychiatric services. If you are
+          experiencing a mental health crisis, thoughts of self-harm, or immediate physical danger, please do not wait
+          for an email reply. Immediately call or text 988 to reach the Suicide &amp; Crisis Lifeline (24/7, free,
+          confidential), call 911, or go to your nearest emergency room.</p>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="current-year">2026</span> Huddle and Heal Counseling and Consulting, LLC. All rights reserved.</p>
+        <p>&copy; <span id="current-year">2026</span> Huddle and Heal Counseling and Consulting, LLC. All rights
+          reserved.</p>
       </div>
     </div>
   </footer>

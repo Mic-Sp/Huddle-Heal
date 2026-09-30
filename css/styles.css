@@ -1151,6 +1151,558 @@ ol {
 }
 
 /* ==========================================================================
+   Resources Page Styles
+   ========================================================================== */
+.resources-hero-section {
+  margin-bottom: var(--space-xl);
+}
+
+.resources-hero-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-2xl) var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .resources-hero-card {
+    padding: var(--space-2xl) var(--space-2xl);
+  }
+}
+
+.resources-hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
+}
+
+.resources-title {
+  font-family: var(--font-family-serif);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.02em;
+}
+
+.resources-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  line-height: 1.45;
+}
+
+.resources-lead {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  max-width: 920px;
+  margin-bottom: 0;
+}
+
+/* 24/7 Crisis Support Banner */
+.crisis-support-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.crisis-support-card {
+  position: relative;
+  background-color: #fff9f6;
+  border: 1px solid #f3d2c1;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+.crisis-support-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d9534f 0%, #e07a5f 100%);
+}
+
+.crisis-support-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.crisis-support-icon {
+  flex-shrink: 0;
+  color: #c94a29;
+  display: flex;
+  align-items: center;
+}
+
+.crisis-support-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2b2d42;
+  margin-bottom: 0;
+}
+
+.crisis-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 680px) {
+  .crisis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1040px) {
+  .crisis-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.crisis-item {
+  background-color: var(--color-bg-surface);
+  border: 1px solid #eed6cc;
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+}
+
+.crisis-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: #d99a80;
+}
+
+.crisis-item-name {
+  font-family: var(--font-family-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2b2d42;
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+.crisis-item-desc {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.crisis-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #c94a29;
+  text-decoration: none;
+  background-color: #fcf0eb;
+  padding: 0.45rem 0.8rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid #f3d2c1;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  align-self: flex-start;
+}
+
+.crisis-action-btn:hover {
+  background-color: #c94a29;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Clinical Hub Section */
+.clinical-hub-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.clinical-hub-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .clinical-hub-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.clinical-hub-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-accent) 50%, var(--color-primary) 100%);
+}
+
+.clinical-hub-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.clinical-hub-intro {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+  max-width: 860px;
+}
+
+.pillar-block {
+  margin-bottom: var(--space-2xl);
+}
+
+.pillar-block:last-child {
+  margin-bottom: 0;
+}
+
+.pillar-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid rgba(60, 88, 112, 0.12);
+  margin-bottom: var(--space-lg);
+}
+
+.pillar-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-hover);
+  display: flex;
+  align-items: center;
+}
+
+.pillar-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0;
+}
+
+.resource-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 860px) {
+  .resource-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+  }
+}
+
+.resource-item-card {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+}
+
+.resource-item-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-secondary-light);
+}
+
+.resource-item-top {
+  margin-bottom: var(--space-md);
+}
+
+.resource-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  background-color: rgba(60, 88, 112, 0.1);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.resource-badge.badge-video {
+  color: #7b2cbf;
+  background-color: rgba(123, 44, 191, 0.1);
+}
+
+.resource-item-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  line-height: 1.35;
+}
+
+.resource-item-desc {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-top: 1px solid rgba(228, 221, 211, 0.8);
+  padding-top: var(--space-sm);
+  margin-top: var(--space-md);
+  transition: color var(--transition-fast);
+}
+
+.resource-link:hover,
+.resource-link:focus-visible {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.resource-link svg {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.resource-link:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* Somatic Grounding Tools Section */
+.grounding-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.grounding-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .grounding-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.grounding-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-secondary) 50%, var(--color-primary) 100%);
+}
+
+.grounding-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.grounding-intro {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+  max-width: 860px;
+}
+
+.grounding-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 860px) {
+  .grounding-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grounding-tool-card {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+}
+
+.grounding-tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-secondary-light);
+}
+
+.grounding-tool-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid rgba(60, 88, 112, 0.12);
+}
+
+.grounding-tool-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-hover);
+}
+
+.grounding-tool-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0;
+}
+
+.grounding-tool-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-md);
+}
+
+.grounding-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.grounding-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-surface);
+  border: 1px solid rgba(228, 221, 211, 0.7);
+  border-radius: var(--border-radius-sm);
+  padding: 0.65rem 0.85rem;
+}
+
+.grounding-step-num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grounding-step-text {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--color-text-main);
+}
+
+.grounding-step-text strong {
+  color: var(--color-primary-dark);
+}
+
+/* Closing CTA Card */
+.resources-cta-section {
+  margin-bottom: var(--space-xl);
+}
+
+.resources-cta-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: center;
+  overflow: hidden;
+}
+
+.resources-cta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
+}
+
+.resources-cta-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.resources-cta-text {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-lg);
+}
+
+/* ==========================================================================
    Placeholder Box Styles - Modern Card Surface with Subtle Highlighting & Shadows
    ========================================================================== */
 .placeholder-box {
