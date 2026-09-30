@@ -1270,6 +1270,96 @@ ol {
 }
 
 /* ==========================================================================
+   About Page Closing CTA Card (Section 5)
+   ========================================================================== */
+.about-cta-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.about-cta-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .about-cta-card {
+    padding: var(--space-2xl) var(--space-2xl);
+  }
+}
+
+.about-cta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
+}
+
+.about-cta-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.01em;
+}
+
+.about-cta-text {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--color-text-muted);
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-xl);
+}
+
+.about-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 600px) {
+  .about-cta-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+}
+
+.about-cta-disclaimer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  border-top: 1px solid rgba(228, 221, 211, 0.7);
+  padding-top: var(--space-md);
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-cta-disclaimer .disclaimer-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-hover);
+}
+
+/* ==========================================================================
    Resources Page Styles
    ========================================================================== */
 .resources-hero-section {
