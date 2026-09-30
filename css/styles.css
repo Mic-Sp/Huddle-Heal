@@ -1270,13 +1270,15 @@ ol {
 }
 
 /* ==========================================================================
-   About Page Closing CTA Card (Section 5)
+   Closing CTA Cards (About & Specialty Pages)
    ========================================================================== */
-.about-cta-section {
+.about-cta-section,
+.trauma-cta-section {
   margin-bottom: var(--space-2xl);
 }
 
-.about-cta-card {
+.about-cta-card,
+.trauma-cta-card {
   position: relative;
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
@@ -1288,12 +1290,14 @@ ol {
 }
 
 @media (min-width: 768px) {
-  .about-cta-card {
+  .about-cta-card,
+  .trauma-cta-card {
     padding: var(--space-2xl) var(--space-2xl);
   }
 }
 
-.about-cta-card::before {
+.about-cta-card::before,
+.trauma-cta-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1303,7 +1307,8 @@ ol {
   background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
 }
 
-.about-cta-heading {
+.about-cta-heading,
+.trauma-cta-heading {
   font-family: var(--font-family-serif);
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   font-weight: 700;
@@ -1312,7 +1317,8 @@ ol {
   letter-spacing: -0.01em;
 }
 
-.about-cta-text {
+.about-cta-text,
+.trauma-cta-text {
   font-size: 1.05rem;
   line-height: 1.68;
   color: var(--color-text-muted);
@@ -1322,7 +1328,8 @@ ol {
   margin-bottom: var(--space-xl);
 }
 
-.about-cta-buttons {
+.about-cta-buttons,
+.trauma-cta-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1332,14 +1339,16 @@ ol {
 }
 
 @media (min-width: 600px) {
-  .about-cta-buttons {
+  .about-cta-buttons,
+  .trauma-cta-buttons {
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--space-md);
   }
 }
 
-.about-cta-disclaimer {
+.about-cta-disclaimer,
+.trauma-cta-disclaimer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1354,7 +1363,8 @@ ol {
   margin-right: auto;
 }
 
-.about-cta-disclaimer .disclaimer-icon {
+.about-cta-disclaimer .disclaimer-icon,
+.trauma-cta-disclaimer .disclaimer-icon {
   flex-shrink: 0;
   color: var(--color-accent-hover);
 }
@@ -1909,6 +1919,371 @@ ol {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--space-lg);
+}
+
+/* ==========================================================================
+   Trauma & EMDR Page Styles (Sections 1 & 2)
+   ========================================================================== */
+.trauma-hero-section {
+  margin-bottom: var(--space-xl);
+}
+
+.trauma-hero-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-2xl) var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .trauma-hero-card {
+    padding: var(--space-2xl) var(--space-2xl);
+  }
+}
+
+.trauma-hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+}
+
+.trauma-title {
+  font-family: var(--font-family-serif);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.02em;
+}
+
+.trauma-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  line-height: 1.45;
+}
+
+.trauma-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  max-width: 920px;
+  margin-bottom: 0;
+}
+
+/* Understanding Trauma & the Nervous System Card */
+.trauma-impact-section {
+  margin-bottom: var(--space-xl);
+}
+
+.trauma-impact-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .trauma-impact-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.trauma-impact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-accent) 50%, var(--color-primary) 100%);
+}
+
+.trauma-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.trauma-lead-text {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--color-text-muted);
+  max-width: 920px;
+  margin-bottom: var(--space-lg);
+}
+
+.trauma-presentations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.trauma-presentation-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: transform var(--transition-base), border-color var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.trauma-presentation-item:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary-light);
+  box-shadow: var(--shadow-xs);
+}
+
+.trauma-presentation-bullet {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  margin-top: 0.55rem;
+}
+
+.trauma-presentation-content {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.trauma-presentation-content strong {
+  font-family: var(--font-family-serif);
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+.trauma-validation-box {
+  background-color: rgba(112, 139, 117, 0.08);
+  border: 1px solid rgba(112, 139, 117, 0.3);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.trauma-validation-icon {
+  flex-shrink: 0;
+  color: var(--color-secondary);
+  margin-top: 2px;
+}
+
+.trauma-validation-content h3 {
+  font-family: var(--font-family-serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.35rem;
+}
+
+.trauma-validation-content p {
+  font-size: 0.95rem;
+  line-height: 1.62;
+  color: var(--color-text-main);
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Trauma & EMDR Page - Section 3: What is EMDR Therapy
+   ========================================================================== */
+.emdr-expl-section {
+  margin-bottom: var(--space-xl);
+}
+
+.emdr-expl-card {
+  position: relative;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .emdr-expl-card {
+    padding: var(--space-2xl);
+  }
+}
+
+.emdr-expl-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
+}
+
+.emdr-heading {
+  font-family: var(--font-family-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.emdr-lead-text {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--color-text-muted);
+  max-width: 920px;
+  margin-bottom: var(--space-xl);
+}
+
+.emdr-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 860px) {
+  .emdr-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.emdr-block {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xs);
+}
+
+.emdr-block-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid rgba(60, 88, 112, 0.12);
+}
+
+.emdr-block-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-hover);
+}
+
+.emdr-block-title {
+  font-family: var(--font-family-serif);
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0;
+}
+
+.emdr-block-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-md);
+}
+
+.emdr-bls-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.emdr-bls-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background-color: var(--color-bg-surface);
+  border: 1px solid rgba(228, 221, 211, 0.7);
+  border-radius: var(--border-radius-sm);
+  padding: 0.65rem 0.85rem;
+}
+
+.emdr-bls-num {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.emdr-bls-text {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--color-text-main);
+}
+
+.emdr-bls-text strong {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.emdr-advantage-box {
+  background-color: rgba(186, 116, 84, 0.08);
+  border: 1px solid rgba(186, 116, 84, 0.25);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.emdr-advantage-icon {
+  flex-shrink: 0;
+  color: var(--color-accent);
+  margin-top: 2px;
+}
+
+.emdr-advantage-content h3 {
+  font-family: var(--font-family-serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.35rem;
+}
+
+.emdr-advantage-content p {
+  font-size: 0.95rem;
+  line-height: 1.62;
+  color: var(--color-text-main);
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
